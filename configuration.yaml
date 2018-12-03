@@ -1,0 +1,62 @@
+homeassistant:
+  name: Dalagatan 60
+  latitude: 59.3431
+  longitude: 18.0443
+  elevation: 42.6
+  unit_system: metric
+  time_zone: Europe/Stockholm
+  customize: !include customize.yaml
+
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://192.168.1.250:3218
+
+config:
+conversation:
+discovery:
+  ignore:
+    - philips_hue
+    - sonos
+    - samsung_tv
+    - apple_tv
+    - plex_mediaserver
+emulated_hue:
+  listen_port: 8300
+frontend:
+history:
+homekit:
+  filter:
+    include_domains: 
+      - light
+http:
+  api_password: !secret http_password
+  server_port: 8123
+influxdb:
+  host: 127.0.0.1
+  database: hass
+  username: hass
+  password: !secret influx_password
+ios: !include ios.yaml
+logbook:
+logger:
+notify:
+recorder:
+  db_url: !secret mysql_db_url
+sun:
+tts:
+  platform: google
+updater:
+
+vera:
+  vera_controller_url: http://192.168.1.254:3480/
+  lights: [5,175,177,289]
+
+media_player: !include_dir_merge_list includes/media_players
+device_tracker: !include device_tracker.yaml
+sensor: !include_dir_merge_list includes/sensors
+group: !include groups.yaml
+automation: !include automations.yaml
+scene: !include scenes.yaml
+#vacuum: !include vacuum.yaml

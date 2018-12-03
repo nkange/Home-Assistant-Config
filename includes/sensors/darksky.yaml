@@ -1,0 +1,17 @@
+- platform: darksky
+  api_key: !secret darksky_api_key
+  monitored_conditions:
+    - summary
+    - icon
+    - temperature
+    - hourly_summary
+    - apparent_temperature
+    - humidity
+    - precip_probability
+    - precip_intensity
+    - wind_speed
+    - pressure
+    - wind_bearing
+    - cloud_cover
+  units: si
+

@@ -1,0 +1,19 @@
+  push:
+    categories:
+      - name: LightsOn
+        identifier: 'LIGHTSON'
+        actions:
+          - identifier: 'LEAVE_ON'
+            title: 'Låt vara på'
+            activationMode: 'background'
+            authenticationRequired: yes
+            destructive: yes
+            behavior: 'default'
+          - identifier: 'TURN_OFF'
+            title: 'Släck allt'
+            activationMode: 'background'
+            authenticationRequired: yes
+            destructive: no
+            behavior: 'textInput'
+            textInputButtonTitle: 'Silencio!'
+            textInputPlaceholder: 'Placeholder'

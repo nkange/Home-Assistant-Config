@@ -1,0 +1,6 @@
+- name: Allt av
+  entities:
+    group.all_lights: off
+
+  
+    

@@ -1,0 +1,11 @@
+- platform: systemmonitor
+  entity_namespace: auto01
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: memory_free
+    - type: network_in
+      arg: ens160
+    - type: network_out
+      arg: ens160
+    - type: processor_use

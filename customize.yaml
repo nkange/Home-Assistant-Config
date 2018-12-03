@@ -1,0 +1,355 @@
+automation.home_assistant_update_available:
+  hidden: true
+light.elliot_tak__110:
+  friendly_name: Elliot Tak
+  haaska_name: Elliot
+  icon: mdi:ceiling-light
+light.alicia_tak_113:
+  friendly_name: Alicia Tak
+  haaska_name: Alicia
+  icon: mdi:ceiling-light
+light.koksbord_22:
+  friendly_name: Köksbord
+  haaska_name: Kitchen table
+  icon: mdi:ceiling-light
+light.vardagsrum_tak_54:
+  friendly_name: Vardagsrum Tak
+  haaska_name: Living Room
+  icon: mdi:lightbulb
+light.spotlights_skap_71:
+  icon: mdi:spotlight
+  friendly_name: Spotlights Skåp
+  haaska_name: Spotlights
+light.spotlights_tak_19:
+  icon: mdi:spotlight
+  friendly_name: Kök Tak
+  haaska_name: Kitchen Ceiling
+light.stor_hall_16:
+  friendly_name: Stora Hallen
+  haaska_name: Hall
+  icon: mdi:ceiling-light
+light.wallplug1_5:
+  friendly_name: Glo-Ball
+  icon: mdi:lamp
+light.sovrum_93:
+  friendly_name: Sovrum
+  haaska_name: Bedroom
+  icon: mdi:ceiling-light
+scene.allt_av:
+  icon: mdi:sleep
+  haaska_name: All Off
+sensor.dark_sky_humidity:
+  hidden: true
+  homebridge_hidden: true
+sensor.dark_sky_apparent_temperature:
+  homebridge_hidden: true
+sensor.dark_sky_cloud_coverage:
+  homebridge_hidden: true
+sensor.dark_sky_hourly_summary:
+  homebridge_hidden: true
+sensor.dark_sky_icon:
+  homebridge_hidden: true
+sensor.dark_sky_precip_intensity:
+  homebridge_hidden: true
+sensor.dark_sky_precip_probability:
+  homebridge_hidden: true
+sensor.dark_sky_pressure:
+  homebridge_hidden: true
+sensor.dark_sky_summary:
+  homebridge_hidden: true
+sensor.dark_sky_temperature:
+  homebridge_hidden: true
+sensor.dark_sky_wind_bearing:
+  homebridge_hidden: true
+sensor.dark_sky_wind_speed:
+  homebridge_hidden: true
+switch.motionsensor_10:
+  friendly_name: Rörelsedetektor
+  hidden: false
+  homebridge_hidden: true
+  haaska_hidden: true
+switch.smoke_sensor_91:
+  friendly_name: Brandvarnare
+  hidden: false
+  homebridge_hidden: true
+  haaska_hidden: true
+device_tracker.sophone:
+  icon: mdi:cellphone-iphone
+  homebridge_hidden: true
+  friendly_name: Sofia's iPhone
+sensor.niphone_battery_state:
+  homebridge_hidden: true
+  hidden: true
+sensor.niphone_battery_level:
+  hidden: true
+  homebridge_hidden: true
+sensor.sophone_battery_state:
+  hidden: true
+  homebridge_hidden: true
+sensor.sophone_battery_level:
+  hidden: true
+  homebridge_hidden: true
+group.all_automations:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.all_devices:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.all_lights:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.all_switches:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.default_view:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.device_trackers:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.weatherbasics:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.sensors:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.all_remotes:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.all_vacuum_cleaners:
+  homebridge_hidden: true
+  haaska_hidden: true
+group.speedtest:
+  homebridge_hidden: true
+  haaska_hidden: true
+automation.low_light:
+  homebridge_hidden: true
+automation.motion_trigger:
+  homebridge_hidden: true
+automation.nattlampa_hall:
+  homebridge_hidden: true
+  haaska_hidden: true
+automation.new_device_on_wifi:
+  homebridge_hidden: true
+  haaska_hidden: true
+automation.turn_off_kitchen_light_10_minutes_after_last_movement:
+  haaska_hidden: true
+  homebridge_hidden: true
+binary_sensor.motionsensor_10:
+  friendly_name: Rörelse
+  icon: mdi:run-fast
+  homebridge_hidden: true
+configurator.plex_media_server:
+  homebridge_hidden: true
+media_player.apple_tv_2:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.niphone6:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.plex_plex_web_safari:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.plex_web_safari:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.plex_web_safari_2:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.samsung_led55_ue55h7000:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.the_iphone_1:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.tv:
+  friendly_name: Sonos Playbar
+  entity_picture: https://hass.kange.se/local/sonos.png
+  hidden: false
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.master_bedroom:
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.elliot:
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.kitchen:
+  homebridge_hidden: true
+  haaska_hidden: true
+media_player.tv_ue55h7000:
+  hidden: true
+  homebridge_hidden: true
+  haaska_hidden: true
+sensor.motionsensorlight_37:
+  friendly_name: Ljusstyrka
+  homebridge_hidden: true
+sensor.motionsensortemp_36:
+  friendly_name: Temperatur
+  homebridge_hidden: true
+sensor.wallplug1powermeter_6:
+  friendly_name: Strömförbrukning
+  hidden: true
+  homebridge_hidden: true
+sensor.yr_symbol:
+  homebridge_hidden: true
+sensor.yr_temperature:
+  homebridge_hidden: true
+sun.sun:
+  hidden: true
+  homebridge_hidden: true
+updater.updater:
+  homebridge_hidden: true
+zone.home:
+  homebridge_hidden: true
+binary_sensor.smoke_sensor_91:
+  friendly_name: Rök
+  icon: mdi:fire
+  homebridge_hidden: true
+  haaska_hidden: true
+device_tracker.kindle7cc8542ae:
+  homebridge_hidden: true
+sensor.smoke_detector_temperature_92:
+  friendly_name: Temperatur
+  homebridge_hidden: true
+  haaska_hidden: true
+binary_sensor.rorelsedetektor_10:
+  homebridge_hidden: true
+device_tracker.000e58b953e3:
+  homebridge_hidden: true
+device_tracker.amazon7cc8542ae:
+  homebridge_hidden: true
+device_tracker.hflpt220:
+  homebridge_hidden: true
+device_tracker.ilast0:
+  homebridge_hidden: true
+device_tracker.iphonese:
+  homebridge_hidden: true
+device_tracker.moabjorgsiphone:
+  homebridge_hidden: true
+device_tracker.niphone5:
+  homebridge_hidden: true
+device_tracker.roomba3117481c00344720:
+  homebridge_hidden: true
+device_tracker.sonoszp_2:
+  homebridge_hidden: true
+light.elliot_tak_25:
+  homebridge_hidden: true
+light.fibaro_dimmer_2_16:
+  homebridge_hidden: true
+light.fibaro_dimmer_2_1_19:
+  homebridge_hidden: true
+light.kitchen_table_22:
+  homebridge_hidden: true
+light.livingroom_19:
+  homebridge_hidden: true
+light.spotlights_54:
+  homebridge_hidden: true
+light.vardagsrum_tak_19:
+  homebridge_hidden: true
+media_player.plex_apple_tv:
+  hidden: true
+  homebridge_hidden: true
+media_player.plex_niphone6:
+  homebridge_hidden: true
+media_player.plex_the_iphone_1:
+  hidden: true
+  homebridge_hidden: true
+media_player.plex_unnamed_device:
+  homebridge_hidden: true
+media_player.samsung_tv_remote:
+  homebridge_hidden: true
+  haaska_hidden: true
+persistent_notification.apple_tv_scan_notification:
+  homebridge_hidden: true
+persistent_notification.homeassistantcheck_config:
+  homebridge_hidden: true
+persistent_notification.httplogin:
+  homebridge_hidden: true
+persistent_notification.invalid_config:
+  homebridge_hidden: true
+remote.apple_tv:
+  homebridge_hidden: true
+  haaska_hidden: true
+sensor.3_in_1_sensor_light_15:
+  homebridge_hidden: true
+sensor.3_in_1_sensor_temperature_14:
+  homebridge_hidden: true
+sensor.motionsensorlight_15:
+  homebridge_hidden: true
+sensor.motionsensortemp_14:
+  homebridge_hidden: true
+sensor.speedtest_download:
+  homebridge_hidden: true
+sensor.speedtest_ping:
+  homebridge_hidden: true
+sensor.speedtest_upload:
+  homebridge_hidden: true
+switch.rorelsedetektor_10:
+  homebridge_hidden: true
+switch.wall_plug_1_5:
+  homebridge_hidden: true
+vacuum.bengt:
+  homebridge_hidden: true
+media_player.plex_plex_web_safari_2:
+  haaska_hidden: true
+  hidden: true
+  homebridge_hidden: true
+group.db_status:
+  homebridge_hidden: true
+  icon: mdi:database
+sensor.hassdb_database_size:
+  icon: mdi:database
+switch.the_button_148:
+  hidden: true
+  homebridge_hidden: true
+scene.button_click_1:
+  hidden: true
+  homebridge_hidden: true
+scene.button_click_2:
+  hidden: true
+  homebridge_hidden: true
+media_player.plex_apple_tv_4_vardagsrum:
+  hidden: true
+  homebridge_hidden: true
+media_player.plex_niphonex:
+  hidden: true
+light.flos_globall_5:
+  icon: mdi:lamp
+  friendly_name: Glo Ball
+light.mantis_289:
+  icon: mdi:floor-lamp
+light.concrete_175:
+  icon: mdi:lamp
+group.lights:
+  homebridge_hidden: true
+group.synology_status:
+  homebridge_hidden: true
+switch.aeon_sensor_150:
+  homebridge_hidden: true
+binary_sensor.aeon_sensor_150:
+  homebridge_hidden: true
+automation.button_click:
+  homebridge_hidden: true
+group.server_status:
+  homebridge_hidden: true
+group.system_status:
+  homebridge_hidden: true
+sensor.vera_power_meter_179_179:
+  hidden: true
+sensor.vera_power_meter_180_180:
+  hidden: true
+sensor.the_button_148:
+  hidden: true
+device_tracker.niphonex:
+  friendly_name: Niklas's iPhone
+  icon: mdi:cellphone-iphone
+light.guest_bathroom_200:
+  friendly_name: Gäst WC

@@ -1,0 +1,8 @@
+- platform: sql
+  entity_namespace: hassdb
+  db_url: !secret mysql_db_url 
+  queries:
+    - name: Database Size
+      query: 'SELECT table_schema "Database", Round(Sum(data_length + index_length) /1024/1025, 1) "Size" from information_schema.tables WHERE table_schema="hass" GROUP BY table_schema;'
+      column: 'Size'
+      unit_of_measurement: MB

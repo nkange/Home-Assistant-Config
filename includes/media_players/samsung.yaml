@@ -1,0 +1,4 @@
+#- platform: samsungtv
+#  host: 192.168.1.12
+#  timeout: 5
+#  port: 8001

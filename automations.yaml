@@ -1,0 +1,50 @@
+- action:
+  - alias: Tänd
+    data:
+      brightness: 20
+      entity_id: light.stor_hall_16
+    service: light.turn_on
+  alias: Nattlampa Hall
+  id: '1497300814172'
+  trigger:
+  - entity_id: binary_sensor.motionsensor_10
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: and
+    conditions:
+    - below: '5'
+      condition: numeric_state
+      entity_id: sensor.motionsensorlight_37
+- id: '1497371053025'
+  alias: New Device on Wifi
+  trigger:
+  - event_type: device_tracker_new_device
+    platform: event
+  action:
+  - alias: Notify niphone6
+    data:
+      message: New device on WiFi
+      title: New Device
+    service: notify.ios_niphonex
+- id: '1497449595375'
+  alias: Home Assistant Update Available
+  trigger:
+  - entity_id: updater.updater
+    platform: state
+  action:
+  - alias: Notify iPhone
+    data:
+      message: Home Assistant Update Available
+    service: notify.ios_niphonex
+- id: The Button Single Click
+  alias: Button Click
+  trigger:
+    platform: event
+    event_type: state_changed
+    event_data:
+      entity_id: sensor.the_button_148
+  action:
+    service: light.toggle
+    entity_id: light.flos_globall_5

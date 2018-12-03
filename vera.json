@@ -1,0 +1,14 @@
+        {
+            "platform": "Vera",
+            "name": "Vera-NK",
+            "veraIP": "192.168.1.254",
+            "haport": 6200,
+            "includesensor": true,
+            "ignorerooms": [],
+            "securitypoll": 2000,
+            "includethermostat": false,
+            "includeRGB": false,
+            "garageLocks": [],
+            "ignoredevices":[],
+            "ignorescenes":[]
+        },

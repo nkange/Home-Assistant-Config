@@ -1,0 +1,20 @@
+
+# Ignore All
+*
+
+# Whitelist this
+!*.yaml
+!.gitignore
+!*.md
+!includes
+!includes/*
+!vera.json
+
+# Ignore this
+.storage
+.cloud
+.google.token
+
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml

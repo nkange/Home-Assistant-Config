@@ -1,0 +1,12 @@
+- platform: synologydsm
+  entity_namespace: syn01
+  host: 192.168.1.251
+  username: admin
+  password: !secret synology_password
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+    - volume_size_total
+    - volume_size_used
+    - volume_percentage_used
