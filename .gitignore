@@ -9,6 +9,7 @@
 !includes
 !includes/*
 !vera.json
+!.travis.yml
 
 # Ignore this
 .storage
