@@ -5,7 +5,10 @@
     - icon
     - temperature
     - hourly_summary
+    - minutely_summary
     - apparent_temperature
+    - apparent_temperature_low
+    - apparent_temperature_high
     - humidity
     - precip_probability
     - precip_intensity
@@ -14,4 +17,4 @@
     - wind_bearing
     - cloud_cover
   units: si
-
+  language: sv

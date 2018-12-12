@@ -1,5 +1,5 @@
 homeassistant:
-  name: Dalagatan 60
+  name: 
   latitude: 59.3431
   longitude: 18.0443
   elevation: 42.6
@@ -25,6 +25,10 @@ discovery:
 emulated_hue:
   listen_port: 8300
 frontend:
+  themes:
+    happy:
+      primary-color: black
+      background-color: black
 history:
 homekit:
   filter:
@@ -52,6 +56,14 @@ updater:
 vera:
   vera_controller_url: http://192.168.1.254:3480/
   lights: [5,175,177,289]
+
+asuswrt:
+  host: 192.168.1.1
+  username: niklas
+  password: !secret asus_password
+#  interval_home: 180
+#  interval_seconds: 12
+#  track_new_devices: false
 
 media_player: !include_dir_merge_list includes/media_players
 device_tracker: !include device_tracker.yaml
