@@ -8,6 +8,8 @@
 !*.md
 !includes
 !includes/*
+!www
+!www/*
 !vera.json
 !.travis.yml
 
