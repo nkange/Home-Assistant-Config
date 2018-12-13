@@ -9,7 +9,7 @@
 !includes
 !includes/*
 !www
-!www/*
+!www/**
 !vera.json
 !.travis.yml
 
