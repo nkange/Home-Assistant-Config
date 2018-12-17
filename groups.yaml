@@ -32,6 +32,7 @@ weatherbasics:
   entities:
   - sensor.dark_sky_icon
   - sensor.dark_sky_summary
+  - sensor.dark_sky_minutely_summary
   - sensor.dark_sky_hourly_summary
   - sensor.dark_sky_precip_probability
   - sensor.dark_sky_temperature
@@ -47,6 +48,8 @@ device_trackers:
   name: Enheter
   entities:
   - device_tracker.niphonex
+  - sensor.niphonex_battery_level
+  - sensor.niphonex_battery_state_2
   - device_tracker.sophone
 sensors:
   name: Sensorer
@@ -73,6 +76,7 @@ system_status:
     - group.server_status
     - group.db_status
     - group.speedtest
+    - group.asus_status
 synology_status:
   name: Synology
   view: no
@@ -97,4 +101,12 @@ db_status:
   view: no
   entities:
     - sensor.hassdb_database_size  
-  
+asus_status:
+  name: ASUS Router
+  view: no
+  entities:
+    - sensor.asuswrt_download
+    - sensor.asuswrt_download_speed
+    - sensor.asuswrt_upload
+    - sensor.asuswrt_upload_speed
+     

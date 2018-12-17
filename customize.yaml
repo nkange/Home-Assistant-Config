@@ -1,5 +1,20 @@
 automation.home_assistant_update_available:
   hidden: true
+automation.low_light:
+  homebridge_hidden: true
+automation.motion_trigger:
+  homebridge_hidden: true
+automation.nattlampa_hall:
+  homebridge_hidden: true
+  haaska_hidden: true
+automation.new_device_on_wifi:
+  homebridge_hidden: true
+  haaska_hidden: true
+automation.turn_off_kitchen_light_10_minutes_after_last_movement:
+  haaska_hidden: true
+  homebridge_hidden: true
+
+## LIGHTS
 light.elliot_tak__110:
   friendly_name: Elliot Tak
   haaska_name: Elliot
@@ -35,59 +50,18 @@ light.sovrum_93:
   friendly_name: Sovrum
   haaska_name: Bedroom
   icon: mdi:ceiling-light
-scene.allt_av:
-  icon: mdi:sleep
-  haaska_name: All Off
-sensor.dark_sky_humidity:
-  hidden: true
+light.flos_globall_5:
+  icon: mdi:lamp
+  friendly_name: Glo Ball
+light.mantis_289:
+  icon: mdi:floor-lamp
+light.concrete_175:
+  icon: mdi:lamp
+
+## GROUPS
+group.lights:
   homebridge_hidden: true
-sensor.dark_sky_apparent_temperature:
-  homebridge_hidden: true
-sensor.dark_sky_cloud_coverage:
-  homebridge_hidden: true
-sensor.dark_sky_hourly_summary:
-  homebridge_hidden: true
-sensor.dark_sky_icon:
-  homebridge_hidden: true
-sensor.dark_sky_precip_intensity:
-  homebridge_hidden: true
-sensor.dark_sky_precip_probability:
-  homebridge_hidden: true
-sensor.dark_sky_pressure:
-  homebridge_hidden: true
-sensor.dark_sky_summary:
-  homebridge_hidden: true
-sensor.dark_sky_temperature:
-  homebridge_hidden: true
-sensor.dark_sky_wind_bearing:
-  homebridge_hidden: true
-sensor.dark_sky_wind_speed:
-  homebridge_hidden: true
-switch.motionsensor_10:
-  friendly_name: Rörelsedetektor
-  hidden: false
-  homebridge_hidden: true
-  haaska_hidden: true
-switch.smoke_sensor_91:
-  friendly_name: Brandvarnare
-  hidden: false
-  homebridge_hidden: true
-  haaska_hidden: true
-device_tracker.sophone:
-  icon: mdi:cellphone-iphone
-  homebridge_hidden: true
-  friendly_name: Sofia's iPhone
-sensor.niphone_battery_state:
-  homebridge_hidden: true
-  hidden: true
-sensor.niphone_battery_level:
-  hidden: true
-  homebridge_hidden: true
-sensor.sophone_battery_state:
-  hidden: true
-  homebridge_hidden: true
-sensor.sophone_battery_level:
-  hidden: true
+group.synology_status:
   homebridge_hidden: true
 group.all_automations:
   homebridge_hidden: true
@@ -122,18 +96,67 @@ group.all_vacuum_cleaners:
 group.speedtest:
   homebridge_hidden: true
   haaska_hidden: true
-automation.low_light:
+group.server_status:
   homebridge_hidden: true
-automation.motion_trigger:
+group.system_status:
   homebridge_hidden: true
-automation.nattlampa_hall:
+  
+## SCENES  
+scene.allt_av:
+  icon: mdi:sleep
+  haaska_name: All Off
+  
+
+#sensor.dark_sky_humidity:
+#  hidden: true
+#  homebridge_hidden: true
+#sensor.dark_sky_apparent_temperature:
+#  homebridge_hidden: true
+#sensor.dark_sky_cloud_coverage:
+#  homebridge_hidden: true
+#sensor.dark_sky_hourly_summary:
+#  homebridge_hidden: true
+#sensor.dark_sky_icon:
+#  homebridge_hidden: true
+#sensor.dark_sky_precip_intensity:
+#  homebridge_hidden: true
+#sensor.dark_sky_precip_probability:
+#  homebridge_hidden: true
+#sensor.dark_sky_pressure:
+#  homebridge_hidden: true
+#sensor.dark_sky_summary:
+#  homebridge_hidden: true
+#sensor.dark_sky_temperature:
+#  homebridge_hidden: true
+#sensor.dark_sky_wind_bearing:
+#  homebridge_hidden: true
+#sensor.dark_sky_wind_speed:
+#  homebridge_hidden: true
+switch.motionsensor_10:
+  friendly_name: Rörelsedetektor
+  hidden: false
   homebridge_hidden: true
   haaska_hidden: true
-automation.new_device_on_wifi:
+switch.smoke_sensor_91:
+  friendly_name: Brandvarnare
+  hidden: false
   homebridge_hidden: true
   haaska_hidden: true
-automation.turn_off_kitchen_light_10_minutes_after_last_movement:
-  haaska_hidden: true
+device_tracker.sophone:
+  icon: mdi:cellphone-iphone
+  homebridge_hidden: true
+  friendly_name: Sofia's iPhone
+sensor.niphone_battery_state:
+  homebridge_hidden: true
+  hidden: true
+sensor.niphone_battery_level:
+  hidden: true
+  homebridge_hidden: true
+sensor.sophone_battery_state:
+  hidden: true
+  homebridge_hidden: true
+sensor.sophone_battery_level:
+  hidden: true
   homebridge_hidden: true
 binary_sensor.motionsensor_10:
   friendly_name: Rörelse
@@ -222,24 +245,6 @@ sensor.smoke_detector_temperature_92:
   haaska_hidden: true
 binary_sensor.rorelsedetektor_10:
   homebridge_hidden: true
-device_tracker.000e58b953e3:
-  homebridge_hidden: true
-device_tracker.amazon7cc8542ae:
-  homebridge_hidden: true
-device_tracker.hflpt220:
-  homebridge_hidden: true
-device_tracker.ilast0:
-  homebridge_hidden: true
-device_tracker.iphonese:
-  homebridge_hidden: true
-device_tracker.moabjorgsiphone:
-  homebridge_hidden: true
-device_tracker.niphone5:
-  homebridge_hidden: true
-device_tracker.roomba3117481c00344720:
-  homebridge_hidden: true
-device_tracker.sonoszp_2:
-  homebridge_hidden: true
 light.elliot_tak_25:
   homebridge_hidden: true
 light.fibaro_dimmer_2_16:
@@ -265,8 +270,9 @@ media_player.plex_the_iphone_1:
 media_player.plex_unnamed_device:
   homebridge_hidden: true
 media_player.samsung_tv_remote:
-  homebridge_hidden: true
   haaska_hidden: true
+  hidden: true
+  homebridge_hidden: true
 persistent_notification.apple_tv_scan_notification:
   homebridge_hidden: true
 persistent_notification.homeassistantcheck_config:
@@ -328,19 +334,11 @@ light.mantis_289:
   icon: mdi:floor-lamp
 light.concrete_175:
   icon: mdi:lamp
-group.lights:
-  homebridge_hidden: true
-group.synology_status:
-  homebridge_hidden: true
 switch.aeon_sensor_150:
   homebridge_hidden: true
 binary_sensor.aeon_sensor_150:
   homebridge_hidden: true
 automation.button_click:
-  homebridge_hidden: true
-group.server_status:
-  homebridge_hidden: true
-group.system_status:
   homebridge_hidden: true
 sensor.vera_power_meter_179_179:
   hidden: true
@@ -351,5 +349,14 @@ sensor.the_button_148:
 device_tracker.niphonex:
   friendly_name: Niklas's iPhone
   icon: mdi:cellphone-iphone
+sensor.niphonex_battery_level:
+  friendly_name: Niklas's iPhone Battery Level
+sensor.niphonex_battery_state_2:
+  friendly_name: Niklas's iPphone Charging
+
 light.guest_bathroom_200:
   friendly_name: Gäst WC
+
+
+
+### REMOVE?

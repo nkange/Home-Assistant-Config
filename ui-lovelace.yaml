@@ -287,8 +287,8 @@ views:
               "paused": /local/assets/speaker.png
               "playing": /local/assets/speaker_on.png
              style:
-              top: 76.5%
-              left: 55.5%
+              top: 78.5%
+              left: 54.9%
               width: 1.9%
 
            - type: image
@@ -304,7 +304,19 @@ views:
               left: 76.3%
               width: 1.8%
 
-
+### TV
+           - type: image
+             entity: media_player.samsung_tv_remote
+             tap_action: more-info
+             hold_action: toggle
+             image: /local/assets/tv.png
+             state_image:
+              "on": /local/assets/tv_on.png
+              "off": /local/assets/tv.png
+             style:
+              top: 73.5%
+              left: 54.9%
+              width: 1.9%
 
 ### FLOORPLAN FANS
 #           - type: image

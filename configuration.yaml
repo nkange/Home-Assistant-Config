@@ -1,7 +1,7 @@
 homeassistant:
   name: 
-  latitude: 59.3431
-  longitude: 18.0443
+  latitude: 59.343446
+  longitude: 18.044361
   elevation: 42.6
   unit_system: metric
   time_zone: Europe/Stockholm
@@ -30,6 +30,8 @@ frontend:
       primary-color: black
       background-color: black
 history:
+lovelace:
+  mode: yaml
 homekit:
   filter:
     include_domains: 
@@ -45,6 +47,14 @@ influxdb:
 ios: !include ios.yaml
 logbook:
 logger:
+
+mqtt:
+  broker: 127.0.0.1
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  discovery: true
+  discovery_prefix: hassmqtt
+  
 notify:
 recorder:
   db_url: !secret mysql_db_url
